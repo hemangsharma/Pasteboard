@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PASTEBOARD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ec1-fl-Lw7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="1" green="0.75206783428498059" blue="0.79829355106846567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKq-eC-PfA">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <items>
+                                    <barButtonItem title="Item" image="trash" catalog="system" landscapeImage="trash" largeContentSizeImage="trash" id="DyY-3G-6xX">
+                                        <connections>
+                                            <action selector="trashcan:" destination="BYZ-38-t0r" id="xsW-p5-nvj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEt-5Q-CmN">
+                                <rect key="frame" x="116" y="795" width="133" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <items>
+                                    <barButtonItem title="Item" image="square.and.arrow.up" catalog="system" id="sgs-Us-r3M"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ec1-fl-Lw7" secondAttribute="bottom" id="0gN-Au-0c9"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5EP-7l-qXd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XKq-eC-PfA" secondAttribute="bottom" id="Blt-gG-DTD"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FaU-e1-HVJ"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ibb-0h-bRb"/>
+                            <constraint firstItem="XKq-eC-PfA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MvZ-pi-8uS"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XLY-mW-HAv"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XPp-j6-KgJ"/>
+                            <constraint firstItem="XKq-eC-PfA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XeA-bm-Gbo"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZAZ-Po-iCy"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZIa-7M-F2d"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zg4-XR-uGw"/>
+                            <constraint firstAttribute="bottom" secondItem="ec1-fl-Lw7" secondAttribute="bottom" id="Zo4-gx-8vE"/>
+                            <constraint firstAttribute="bottom" secondItem="ec1-fl-Lw7" secondAttribute="bottom" id="cxt-cB-dLX"/>
+                            <constraint firstItem="XKq-eC-PfA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gnh-Ri-j7A"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lD7-Ez-VtJ"/>
+                            <constraint firstItem="XKq-eC-PfA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="p8X-Aq-sTF"/>
+                            <constraint firstItem="XKq-eC-PfA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pgt-Gb-w76"/>
+                            <constraint firstItem="ec1-fl-Lw7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ydZ-jw-t9Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="YEt-5Q-CmN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="ec1-fl-Lw7" id="rLM-Nl-EH8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
